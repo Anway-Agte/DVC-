@@ -61,7 +61,7 @@
 				<li class="nav-item dropdown dropdown-user" style = "float:right">
 					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
 						<img src="static\images\demo\users\face11.jpg" class="rounded-circle mr-2" height="34" alt="">
-						<span>Victoria</span>
+						<span>{{ session['name']}}</span>
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
@@ -69,7 +69,7 @@
 						<a href="#" class="dropdown-item"><i class="icon-coins"></i> My balance</a>
 						<div class="dropdown-divider"></div>
 						<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
-						<a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+						<a href="/logout/" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
 					</div>
 				</li>
 			</ul>
@@ -110,7 +110,7 @@
 							</div>
 
 							<div class="media-body">
-								<div class="media-title font-weight-semibold">Victoria Baker</div>
+								<div class="media-title font-weight-semibold">{{session['name']}}</div>
 								<div class="font-size-xs opacity-50">
 									<i class="icon-pin font-size-sm"></i> &nbsp;Santa Ana, CA
 								</div>
