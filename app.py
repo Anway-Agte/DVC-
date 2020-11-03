@@ -147,7 +147,7 @@ def logout():
 @app.route("/dashboard/")
 @login_required
 def dashboard():
-    return(render_template('user.html'))
+    return(render_template('dashboard.html'))
 
 @app.route("/forgot_password" , methods = ["POST" , "GET"])
 def forgot():
