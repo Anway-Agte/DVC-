@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+
+{%block body%}
+
+<div class="container col-6" style="width: 25%;margin-top:150px ;">
+   {% include 'includes/_messages.html' %} 
+   <div class="card">
+     <div class="card-body">
+    <h3 class="head">Enter your email address for verification link</h3>
+    <form name="forgot_form" method = "POST" autocomplete="off">
+        <div class="mb-3  md-form">
+          <label for="lexampleInputEmail1" class="form-label font-weight-light">Email address</label>
+          <input type="email" name = "forgotemail" class="form-control" id="lexampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="alert alert-danger" id = "ferror" style="display: none;" role="alert">
+              
+            </div>
+          <p><button type="submit"  class="btn btn-cyan" value = "Send verification email">Send verification email</button></p>
+      </form>
+      <h2 class = "sent_email" style="display: none;">We've sent you a verification email!</h2>
+    </div> 
+    </div>
+    </div>
+
+{% endblock %}
