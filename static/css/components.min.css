@@ -759,7 +759,6 @@ input[type="text"].noui-height-helper:not(.noUi-target)[data-fouc] {
   font-family: icomoon;
   font-size: 1rem;
   display: inline-block;
-  float: left;
   margin-top: 0.12502rem;
   margin-right: 0.625rem;
   line-height: 1;
@@ -2136,7 +2135,7 @@ input[type="text"].noui-height-helper:not(.noUi-target)[data-fouc] {
   -webkit-transform: translate(-50%, -100%);
   transform: translate(-50%, -100%);
   background: linear-gradient(to top right, #2f00bf, #ff2adb);
-  -webkit-background-clip: text;
+  
   -webkit-text-fill-color: transparent;
 }
 .carousel-item.row.active {
