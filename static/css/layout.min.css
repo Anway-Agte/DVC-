@@ -150,7 +150,7 @@ body {
 }
 @media screen and (prefers-reduced-motion: reduce) {
   .sidebar:not(.sidebar-component) .sidebar-content {
-    transition: none;
+    transition: none; 
   }
 }
 .navbar-lg:first-child
